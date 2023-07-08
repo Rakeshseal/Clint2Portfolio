@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap');
+
+.main-banner{
+    background-image: url(image/front-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+    h1{
+        font-size: 100px;
+    }
+    h2{
+        font-size: 70px;
+    }
+    p{
+        font-size: 22px;
+    }
+
+//Buttons....
+    .button{
+
+        gap: 20px;
+
+        .cv-btn{
+            width: 80px;
+            height: 42px;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            background-color: #0a0d4d;
+            color: #fff;
+        }
+        .cv-btn:hover{
+            background-color: #3d45d4;
+            
+        }
+        .portfolio-btn{
+            width: 200px;
+            height: 42px;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            background-color: #0a0d4d;
+            color: #fff;
+        }
+        .portfolio-btn:hover{
+            background-color: #3d45d4;
+            
+        }
+    }
+    // img{
+    //     width: 40%;
+    // }
+    .side-img{
+        width: 60%;
+        height: 100%;
+        .my-img{
+            width: 100%;
+        }
+    }
+    
+    //animate text-styling
+    .animate-text{
+        height: auto;
+        
+    }
+    .r{
+            
+            font-size: 70px;
+            font-weight: 600;
+            color: rgb(24, 24, 24);
+            text-transform: uppercase;
+            font-family: 'Gantari', sans-serif;
+            
+          span {
+            border-right: .05em solid;
+            animation: text-animation 2s steps(1) infinite;
+          }
+          
+          @keyframes text-animation {
+            50% {
+              border-color: transparent;
+            }
+          }
+    }
+}
+
+
+
+//Responsive...
+@media screen and (max-width: 970px){
+    .side-img{
+        width: 100%;
+        height: 100%;
+        .my-img{
+            width: 250%;
+        }
+    }
+
+    .animate-text{
+        height: 300px;
+        
+    }
+    .r{
+           
+            font-size: 30px;
+            font-weight: 400;
+            color: rgb(24, 24, 24);
+            text-transform: uppercase;
+            font-family: 'Gantari', sans-serif;
+            
+          span {
+            border-right: .05em solid;
+            animation: text-animation 2s steps(1) infinite;
+          }
+          
+          @keyframes text-animation {
+            50% {
+              border-color: transparent;
+            }
+          }
+    }
+
+    .main-banner{
+        
+    
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+}

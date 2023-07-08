@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+//-------left_side-----
+.left_cont{
+    
+    .left_side{
+        position: fixed;
+        width: 20vw;
+        height: 100vh;
+        border: none;
+        outline: none;
+        background-color: #0a0d4db4;
+        h4{
+            color: #fff;
+        }
+        h6{
+            color: #31b3cd;
+        }
+    }
+    .profile_img{
+        width: 70%;
+        border: 3px solid #d3d3d3;
+    }
+
+    .information{
+        gap: 10px;
+    }
+    .item{
+       .rounded-circle{
+        width: 13px;
+        height: 13px;
+        background-color: #fff;
+       } 
+       .nav-link{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        
+       }
+       .nav-link{
+        border:none;
+        position: relative;
+      }
+      .nav-link:hover{
+        border: none;
+      }
+      
+      }
+      .nav-link::after{
+        content: '';
+        position: absolute;
+        width: 0px;
+        height: 1px;
+        left: 50%;
+        bottom:0;
+        background-color: white;
+        transition: all ease-in-out .2s;
+      }
+      .nav-link:hover::after{
+        width: 100%;
+        left: 0;
+      }
+    
+}
+
+//-------Right_side--------
+
+.main-banner{
+    background-image: url(img/front-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 20%;
+    cursor: pointer;
+
+}
+
+.praso_info{
+    
+    p{
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
+.info{
+    gap: 40px;
+}
+.name_cont{
+    width: 50%;
+    gap: 10px;
+    
+}
+.name_comp{
+    width: 30%;
+}
+.name_ans{
+    width: 70%;
+}
